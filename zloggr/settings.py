@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,17 +21,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'yo5ve94x50js!0y4(96-ng1!jdv-=%x(va36hf)mx-d4^sw8b('
 
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'yo5ve94x50js!0y4(96-ng1!jdv-=%x(va36hf)mx-d4^sw8b(')
+with open('blogproject SK.txt') as f:
+    SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
+DEBUG = False
 
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
-
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['zloggr.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
@@ -131,7 +129,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 
-#django_heroku.settings(locals())
+django_heroku.settings(locals())
 
 
 #Heroku deployment issues
