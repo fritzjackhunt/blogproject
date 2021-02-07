@@ -26,7 +26,7 @@ with open('blogproject SK.txt') as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False 
+DEBUG = True
 
 ALLOWED_HOSTS = ['zloggr.herokuapp.com', '127.0.0.1', 'localhost']
 
