@@ -143,8 +143,8 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
 
 #PWA settings
-PWA_APP_NAME = 'blog'
-PWA_APP_DESCRIPTION = "Essiet PWA"
+PWA_APP_NAME = 'zloggr'
+PWA_APP_DESCRIPTION = "Zloggr PWA"
 PWA_APP_THEME_COLOR = '#000000'
 PWA_APP_BACKGROUND_COLOR = '#ffffff'
 PWA_APP_DISPLAY = 'standalone'
@@ -154,19 +154,19 @@ PWA_APP_START_URL = '/'
 PWA_APP_STATUS_BAR_COLOR = 'default'
 PWA_APP_ICONS = [
 	{
-		'src': 'static/pictures/on_off.jpg',
+		'src': 'static/pictures/120px-Fractal-Flux.png',
 		'sizes': '160x160'
 	}
 ]
 PWA_APP_ICONS_APPLE = [
 	{
-		'src': 'static/pictures/on_off.jpg',
+		'src': 'static/pictures/120px-Fractal-Flux.png',
 		'sizes': '160x160'
 	}
 ]
 PWA_APP_SPLASH_SCREEN = [
 	{
-		'src': 'static/pictures/on_off.jpg',
+		'src': 'static/pictures/120px-Sealife001pp.png',
 		'media': '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)'
 	}
 ]
